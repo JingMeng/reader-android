@@ -170,13 +170,10 @@ public class MyX5WebView extends WebView {
             webSetting.setSupportZoom(true);
             webSetting.setBuiltInZoomControls(true);
             webSetting.setSupportMultipleWindows(false);
-            webSetting.setAppCacheEnabled(true);
             webSetting.setDomStorageEnabled(true);
             webSetting.setJavaScriptEnabled(true);
             webSetting.setGeolocationEnabled(true);
             webSetting.setCacheMode(WebSettings.LOAD_NO_CACHE);
-            webSetting.setAppCacheMaxSize(Long.MAX_VALUE);
-            webSetting.setAppCachePath(activity.getDir("appcache", 0).getPath());
             webSetting.setDatabasePath(activity.getDir("databases", 0).getPath());
             webSetting.setGeolocationDatabasePath(activity.getDir("geolocation", 0).getPath());
             webSetting.setUseWideViewPort(true);

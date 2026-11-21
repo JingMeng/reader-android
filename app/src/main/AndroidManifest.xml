@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.yuenov.open">
+    xmlns:dist="http://schemas.android.com/apk/distribution">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -21,20 +20,20 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <!--适配状态栏-->
+        <!--????????-->
         <meta-data
             android:name="android.max_aspect"
             android:value="2.4" />
-        <!--适配华为（huawei）刘海屏-->
+        <!--????????uawei??????-->
         <meta-data
             android:name="android.notch_support"
             android:value="true" />
-        <!--适配小米（xiaomi）刘海屏-->
+        <!--????????iaomi??????-->
         <meta-data
             android:name="notch.config"
             android:value="portrait|landscape" />
 
-        <activity android:name="com.yuenov.open.activitys.FirstActivity">
+        <activity android:name="com.yuenov.open.activitys.FirstActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -74,7 +73,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 搜索 -->
+        <!-- ??? -->
         <activity
             android:name="com.yuenov.open.activitys.SearchActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -108,7 +107,7 @@
 
         <!-- BDetailActivity -->
 
-        <!-- 列表 -->
+        <!-- ??? -->
         <activity
             android:name="com.yuenov.open.activitys.FindAllListActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -116,7 +115,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 分类 -->
+        <!-- ??? -->
         <activity
             android:name="com.yuenov.open.activitys.CategoryChannelActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -124,7 +123,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 分类二级页 -->
+        <!-- ????????-->
         <activity
             android:name="com.yuenov.open.activitys.CategoryChannelItemListActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -132,7 +131,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 完本 -->
+        <!-- ??? -->
         <activity
             android:name="com.yuenov.open.activitys.CategoryEndListActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -140,7 +139,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 完本 查看全部 -->
+        <!-- ??? ?????? -->
         <activity
             android:name="com.yuenov.open.activitys.CategoryEndAllListActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -148,7 +147,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 专题 -->
+        <!-- ??? -->
         <activity
             android:name="com.yuenov.open.activitys.SpecialListActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -156,7 +155,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 专题 - 查看全部 -->
+        <!-- ??? - ?????? -->
         <activity
             android:name="com.yuenov.open.activitys.SpecialAllListActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -164,7 +163,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 阅读记录 -->
+        <!-- ?????? -->
         <activity
             android:name="com.yuenov.open.activitys.ReadHistoryListActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -172,7 +171,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 榜单 -->
+        <!-- ??? -->
         <activity
             android:name="com.yuenov.open.activitys.RankActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -187,7 +186,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!--  更多推荐-->
+        <!--  ??????-->
         <activity
             android:name="com.yuenov.open.activitys.BookRecommendMoreActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -195,7 +194,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!--意见反馈-->
+        <!--??????-->
         <activity
             android:name="com.yuenov.open.activitys.FeedBackActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -203,7 +202,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!--阅读偏好-->
+        <!--??????-->
         <activity
             android:name="com.yuenov.open.activitys.ReadingPreferencesActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -211,7 +210,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 常见问题 -->
+        <!-- ?????? -->
         <activity
             android:name="com.yuenov.open.activitys.CommonProblemActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -219,7 +218,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 关于我们 -->
+        <!-- ?????? -->
         <activity
             android:name="com.yuenov.open.activitys.AboutMeActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -227,9 +226,9 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
-        <!-- 隐藏页 -->
+        <!-- ?????-->
 
-        <!-- 网页 -->
+        <!-- ??? -->
         <activity
             android:name="com.yuenov.open.activitys.BrowserActivity"
             android:configChanges="keyboardHidden|orientation"

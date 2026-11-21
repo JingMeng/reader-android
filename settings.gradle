@@ -1,2 +1,2 @@
-include ':app', ':updateapputils'
+include ':app'
 rootProject.name='book3'

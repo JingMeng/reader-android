@@ -4,13 +4,11 @@ package com.yuenov.open.utils;
 /**
  * Created niupuyue
  * Date 2019/1/10
- * DES 全局异常捕获控制类，将错误信息记录
- */
+ * DES 鍏ㄥ眬寮傚父鎹曡幏鎺у埗绫伙紝灏嗛敊璇俊鎭褰? */
 public class UtilityException {
 
     /**
-     * @param obj 当前页面的对象
-     * @param e
+     * @param obj 褰撳墠椤甸潰鐨勫璞?     * @param e
      */
     public static void catchException(Object obj, Exception e) {
 
@@ -47,9 +45,9 @@ public class UtilityException {
 //                    classInfo = "";
 //                }
 //            }
-//            // android.support.v4.app.Fragment
-//            else if (obj instanceof android.support.v4.app.Fragment) {
-//                android.support.v4.app.Fragment fragment = ((android.support.v4.app.Fragment) obj);
+//            // androidx.fragment.app.Fragment
+//            else if (obj instanceof androidx.fragment.app.Fragment) {
+//                androidx.fragment.app.Fragment fragment = ((androidx.fragment.app.Fragment) obj);
 //                if (fragment.getActivity() != null) {
 //                    classInfo = fragment.getActivity().getLocalClassName();
 //                } else {
@@ -65,8 +63,7 @@ public class UtilityException {
 //            classInfo="";
 //        }
 
-//        // debug，弹出展示展示Exception信息的页面
-//        if (AppConstant.isDebug) {
+//        // debug锛屽脊鍑哄睍绀哄睍绀篍xception淇℃伅鐨勯〉闈?//        if (AppConstant.isDebug) {
 //            try {
 //                Intent intent = DebugExceptionActivity.getIntent(RRApplication.getAppContext(), classInfo, e);
 //                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
